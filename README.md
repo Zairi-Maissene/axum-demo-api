@@ -15,8 +15,8 @@ This project is an Axum-based API, built with Rust and SQLx for PostgreSQL datab
 - axum
 - tokio
 - PostgreSQL
-- `sqlx-cli` for database migrations
-- serde for JSON serialization and deserialization and validation
+- sqlx 
+- serde
 
 ## Setup
 
