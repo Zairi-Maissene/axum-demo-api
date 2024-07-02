@@ -25,7 +25,6 @@ This project is an Axum-based API, built with Rust and SQLx for PostgreSQL datab
 ```sh
 git clone https://github.com/Zairi-Maissene/axum-demo-api.git
 cd axum-demo-api
-cargo build
 ```
 ### 2. Configure the database
    Create a PostgreSQL database and update the database URL in .env file:
@@ -37,13 +36,16 @@ DATABASE_URL=postgres://user:password@localhost/db_name
 ### 3. Run the application
 
 ```sh
+cargo build
 cargo run
 ```
 
 ### API Endpoints
+Make request to `http://localhost:3000/` or your SERVER_ADDRESS set in .env with the following payload:
+
 #### 1. POST 
 ```sh
-Request
+Request Body
 {
   "username": "john_doe",
   "email": "john_doe@example.com"
